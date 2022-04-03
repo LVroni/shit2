@@ -1,0 +1,42 @@
+#pay-form {
+  background-image: url('https://cis.visa.com/dam/VCOM/regional/ap/taiwan/global-elements/images/tw-visa-gold-card-498x280.png');
+  background-repeat: no-repeat;
+  background-size: contain;
+  padding: 32px 64px;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  row-gap: 10px;
+  column-gap: 10px;
+  width: 500px;
+  box-sizing: content-box;
+}
+
+input, button {
+  font-family: monospace;
+  text-align: center;
+  letter-spacing: 5px;
+  border: none;
+  outline: none;
+  padding: 12px 16px;
+  border-radius: 8px;
+  box-sizing: border-box;
+}
+
+#card-number {
+  margin-top: 156px;
+  grid-column: span 4;
+}
+
+#cardholder-name {
+  text-transform: uppercase;
+  grid-column: span 2;
+  grid-row: 3;
+}
+
+.pay-button {
+  background-color: #0263BC;
+  color: white;
+  grid-column: span 2;
+  grid-row: 3;
+  cursor: pointer;
+}

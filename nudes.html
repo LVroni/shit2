@@ -4,10 +4,41 @@
         <meta charset="UTF-8" />
         <title>nudes</title>
         <link rel="stylesheet" href="cvstyle.css">
+        <link rel="stylesheet" href="payment.css">
+        <script src="./payment.js" defer></script>
     </head>
     <body>
         <div style="text-align: center; color: red; font-size: 100px">
             ВЫ ПОПАЛИ В ХОРНИ ТЮРЬМУ
         </div>
+        <div style="margin-left: 40px; margin-bottom: 20px;">
+            заплатите 5$ за нюдсы Вани
+        </div>
+        <form id="pay-form">
+            <input
+                placeholder="0000 0000 0000 0000"
+                maxlength="19"
+                id="card-number"
+                name="card"
+            />
+            <input
+                placeholder="12/22"
+                maxlength="5"
+                id="expire-date"
+                name="expire"
+            />
+            <input
+                placeholder="CVC"
+                maxlength="3"
+                id="cvc"
+                name="cvc"
+            />
+            <input
+                placeholder="CARDHOLDER NAME"
+                id="cardholder-name"
+                name="name"
+            />
+            <button type="submit" class="pay-button">Pay 5$</button>
+        </form>
     </body>
 </html>
